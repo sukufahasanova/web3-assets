@@ -1,0 +1,33 @@
+body {
+    height: 5000px;
+    background-color: aquamarine;
+}
+
+.box{
+    height: 100px;
+    width:100px;
+    margin-bottom: 5px;
+}
+
+.my-violet-color{
+  background-color: blueviolet;
+}
+.my-black-color{
+  background-color: rgb(0, 0, 0);
+}
+.my-green-color{
+  background-color: rgb(27, 191, 38);
+}
+.my-yellow-color{
+  background-color: rgb(237, 237, 94);
+}
+
+.box-small{
+     height: 50px;
+     width:50px;
+  
+     margin-bottom: 5px;
+}
+.italic{
+    font-style: italic;
+}
