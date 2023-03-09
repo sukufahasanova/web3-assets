@@ -1,3 +1,19 @@
+
+ /* 
+ Style line numbers
+ - bg -colors on line ---- 28
+ 
+ 
+ 
+ */
+
+ .title{
+  text-align: center;
+  padding: 10px;
+  width:40%;
+  margin: auto;
+ }
+
 body {
     height: 5000px;
     background-color: aquamarine;
@@ -9,18 +25,36 @@ body {
     margin-bottom: 5px;
 }
 
-.my-violet-color{
-  background-color: blueviolet;
+
+/* colors for texts start */
+
+.text-color-white{
+  color:white
 }
-.my-black-color{
+
+.text-color-blue{
+  color:blue
+}
+
+/* colors for texts end */
+
+
+/* classes for backgrounds start*/
+
+.my-violet-color-bg{
+  background-color: blueviolet;
+ 
+}
+.my-black-color-bg{
   background-color: rgb(0, 0, 0);
 }
-.my-green-color{
+.my-green-color-bg{
   background-color: rgb(27, 191, 38);
 }
-.my-yellow-color{
+.my-yellow-color-bg{
   background-color: rgb(237, 237, 94);
 }
+/* classes for backgrounds start */
 
 .box-small{
      height: 50px;
