@@ -3,8 +3,6 @@
  Style line numbers
  - bg -colors on line ---- 28
  
- 
- 
  */
 
  .title{
@@ -41,6 +39,7 @@ body {
 
 /* classes for backgrounds start*/
 
+/* Kebab case naming */
 .my-violet-color-bg{
   background-color: blueviolet;
  
@@ -64,4 +63,21 @@ body {
 }
 .italic{
     font-style: italic;
+}
+p,h1{
+  font-weight: 900;
+}
+
+/* Apply psevdo class for h1 */
+h1:hover{
+  background-color: rgb(19, 22, 21);
+}
+li:first-child{
+  color:red;
+}
+li:last-child{
+  color:rgb(13, 0, 255);
+}
+li:nth-child(3){
+  color: blueviolet;
 }
