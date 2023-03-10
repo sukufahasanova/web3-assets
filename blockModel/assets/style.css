@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title-text{
+    margin:5px;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+/* Nav start */
+
+nav{
+    height: 60px;
+    background-color: aquamarine;
+    margin-bottom: 50px;
+}
+
+nav ul li{
+   display: inline-block; 
+   margin-left:10px;
+   border: 1px solid black;
+   border-radius: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding:5px;
+    
+}
+
+/* Nav end */
+
+
+
+/* Paddings start */
+/* p{
+    width: 300px;
+   
+    
+    border: 1px solid black;
+} */
+.p-25{
+   
+    /* padding-left:20px;
+    padding-right: 20px;
+    padding-bottom:40px;
+    padding-top: 40px; */
+    /* padding: 20px 30px 5px; */
+    /* padding: 30px 10px; */
+    /* padding:5px auto; */
+}
+.pb-25{
+    padding-bottom: 25px;
+}
+/* Paddings end */
+
+
+
+/* Margins start */
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mt-70{
+    margin-top: 70px;
+}
+
+.container{
+    width:80%;
+    height: 300px;
+    background-color: dodgerblue;
+    margin: auto;
+
+}
+
+.red{
+    background-color: rgb(255, 204, 0);
+    width:300px;
+    border: 3px solid black;
+}
+
+
+/* Margins end */
+
+
+h1{
+
+    background-color: bisque;
+   
+
+}
+p{
+    background-color: aquamarine;
+}
+
+span{
+    background-color: rgb(41, 165, 226);
+  
+}
+i{
+     background-color: bisque;
+}
+.wrapper{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
