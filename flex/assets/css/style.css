@@ -1,0 +1,39 @@
+
+h1{
+    color: red;
+}
+
+.wrapper-box{
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+.box{
+   
+    width:100px;
+    background-color: maroon;
+    margin: 5px;
+}
+.one{
+height: 100px;
+order:2;
+
+}
+.two{
+order:1;
+height: 100px;
+}
+.three{
+height: 70px;
+}
+.four{
+height: 100px;
+}
+.five{
+height: 100px;
+}
