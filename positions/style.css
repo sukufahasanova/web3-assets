@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 5000px;
+   
+}
+.wrapper{
+    background-color:aqua;
+    padding:10px;
+ 
+      position: relative;
+    /* position: sticky;
+    top:100px;
+    left:0px; */
+    /* margin-top:400px; */
+   
+    
+}
+.wrapper-second{
+    
+  
+    background-color: blueviolet;
+    
+}
+
+.box{
+    padding:10px;
+    border: 2px solid green;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    color: white;
+}
+
+.red{
+    background-color: red;
+    /* position: absolute;
+    top:0px;
+    left:0px; */
+}
+.yellow{
+    background-color: yellow;
+    color:black;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
