@@ -58,7 +58,7 @@ ul li a:hover{
 }
 section.news{
     width:70%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     padding-top:10px;
 }
 article{
@@ -69,6 +69,10 @@ article{
     padding: 5px;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     
+}
+article:hover{
+    background-color: blanchedalmond;
+    transition: all 0.3s ease-in-out;
 }
 .img-fluid{
     min-width: 100px;
@@ -98,7 +102,41 @@ article{
     text-align: justify;
 }
 aside{
-    background-color: beige;
+  
     width:30%;
-    height: 500px;
+    height: 100vh;
+    /* position: fixed; */
+    top: 0;
+    right: 0;
+    /* z-index: -1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside-wrapper{
+    width:100%;
+    
+}
+.categories{
+    background-color: rgb(147, 147, 147);
+    width:80%;
+    margin: auto;
+
+    top:100px;
+}
+.categories ul{
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.4rem;
+    
+}
+.categories ul li{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    color:white
+}
+.categories ul li:hover{
+    background-color: bisque;
 }

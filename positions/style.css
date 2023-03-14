@@ -57,3 +57,45 @@ body {
 .green {
     background-color: green;
 }
+
+.tooltip{
+    height: 200px;
+    background-color: rgb(226, 178, 178);
+}
+
+/* css from pdf */
+
+.icon-with-tip {
+    position: relative;
+ 
+}
+
+.icon {
+    text-align: center;
+   
+}
+
+.tip {
+    display: none;
+    position: absolute;
+    width: 100px;
+    left: 30px;
+    top: -5px;
+  
+}
+
+.icon-with-tip:hover .tip {
+    display: block;
+}
+.secret-word{
+    display: none;
+}
+.hover-me{
+    background-color: red;
+    color: white;
+    height: 100px;
+    width:100px;
+}
+.hover-me:hover .secret-word{
+    display: block;
+}
