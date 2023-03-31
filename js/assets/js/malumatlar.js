@@ -1,26 +1,52 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const name = "Trevor";
+// console.log(name.indexOf("r"));
+// // 1
+// console.log(name.indexOf("vor"));
+// // 3
+// console.log(name.indexOf("p"));
+// // -1
+// let myStr = "Amerika"
+// console.log(myStr.length);
+
+// console.log(myStr[0]);
+
+// //  to find last char of string
+
+// console.log(myStr[myStr.length-1])
+
+// console.log(myStr.at(-1))
+
+// function wordCheck(word) {
+//     //  eger sozun sonu a ile bitirse consola yaz ki ugurlu emeliyyat
+//     //  eks halda  soz duzgun deyil
+// }
+
 /**
  * firstName dəyişənində istifadəçinin adı, lastName — dəyişənində isə soyadı saxlanır.
 Şablon mətnlərdən istifadə edərək, konsola “Sizi bir daha görməyimizə şadıq, <firstName> <lastName>”.
  */
 
-let firstName = "Javid";
-let lastName = "Salimov";
+// let firstName = "Javid";
+// let lastName = "Salimov";
 
-let result = `Sizi bir daha görməyimizə şadıq, ${firstName} ${lastName}`;
+// let result = `Sizi bir daha görməyimizə şadıq, ${firstName} ${lastName}`;
 
-console.log(result);
-
-
-
-
-
-
-
-
-
-
+// console.log(result);
 
 // //  birleshdirme concat
 
@@ -29,35 +55,11 @@ console.log(result);
 
 //  let fullName = `Salam ${name} ${lastName},   Necesiniz!`;
 
-
-
 // console.log(fullName)
-
-
-
 
 // const message = 'He\'s coming to visit you';
 // console.log(message);
 // He's coming to visit you
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //  Xususi deyishenler
 
@@ -65,23 +67,6 @@ console.log(result);
 // NaN
 // console.log(256 / 0);
 // Infinity
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let numFirst = 5;
 
@@ -97,28 +82,12 @@ console.log(result);
 //   },
 // };
 
-
-
 // let hazirOlan = Math.pow(2, 3);
 
 // let ozFunksiyam = QuvveteYukseldenQaqas.pow(2, 3);
 
 // console.log("Bura hazir funksiyadir",hazirOlan)
 // console.log("Bura menimdir",ozFunksiyam)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //  inkrement dekrement
 
@@ -139,30 +108,7 @@ console.log(result);
 // add();
 // add();
 
-
-
 // console.log(num)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 //  modulo nedir
@@ -175,23 +121,6 @@ console.log(result)
 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * 
  * let first = 2013;
@@ -200,13 +129,6 @@ console.log(result)
    console.log(first)
  * qisaldilmish operatorlarl ish 
    */
-
-
-
-
-
-
-
 
 //  riyazi emeliyyatlar
 
