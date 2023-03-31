@@ -1,7 +1,7 @@
 
-const name = "YaKudza - Zaqatala";
+// const name = "YaKudza - Zaqatala";
 
-console.log(name);
+// console.log(name);
 
 
 
@@ -26,15 +26,16 @@ console.log(name);
 
 
 
-// let heading = document.querySelector('h1');
-// let btn = document.querySelector('button');
 
-// btn.addEventListener('click', () => {
-//     heading.innerText = "AAAAAAA Men Neynedim!!";
-//     heading.style.backgroundColor = "blue";
-//     heading.style.color = "white";
+let heading = document.querySelector('h1');
+let btn = document.querySelector('button');
 
-// })
+btn.addEventListener('click', () => {
+    heading.innerText = "AAAAAAA Men Neynedim!!";
+    heading.style.backgroundColor = "blue";
+    heading.style.color = "white";
+
+})
 
 
 // console.log(heading)
