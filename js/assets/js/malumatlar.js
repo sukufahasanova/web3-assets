@@ -1,3 +1,16 @@
+/**
+ * İstifadəçidən iki ədəd daxil etməsini xahiş edin. 
+Bu ədədlərin toplama, çıxma, vurma və bölməsinin nəticələrini konsola alt-alta 4 sətirdə çıxarın.
+
+ */
+
+let numOne = +prompt("Birinci reqemi daxil edin");
+let numTwo = +prompt("Ikinci reqemi daxil edin");
+
+console.log(numOne + numTwo);
+console.log(numOne - numTwo);
+console.log(numOne * numTwo);
+console.log(numOne / numTwo);
 
 
 
@@ -5,13 +18,65 @@
 
 
 
+// console.log(Number(true));
+// // 1
+// console.log(Number(false));
+// // 0
 
 
 
+// const value1 = 25 / "5";
+// console.log(value1);
+// // 5
 
+// const value2 = 25 + "5";
+// console.log(value2);
 
+// console.log(parseInt("123lo45"))
 
+/**
+ * İstifadəçidən ad daxil etməsini istəyin.
+Konsola "Salam, <ad>!" formatında salamlama mesajı çıxarın.
 
+ */
+
+// let name = prompt("Zehmet olmasa adinizi daxil edin!");
+
+// console.log(`Salam ${name}`);
+
+// alert("Xosh gelifsizz, hemishe siz gelesinqiz")
+
+// let num = Number(prompt("deyer daxil et"))
+
+// console.log(num+10)
+
+// Convert to num
+
+// let num = "123yug7yug";
+
+// let result = +num + 123;
+// let result = Number(num) + 123;
+// let result = parseInt(num)+123
+
+// console.log(isNaN(num))
+
+// console.log(result)
+
+//  interaction functions
+
+// alert("Salam");
+// let numOne = +prompt("Birinci reqemi  daxil et");
+// let numTwo = +prompt("Ikinci reqemi daxil et");
+
+// let isAdmin = confirm("Siz bize abunesiz?");
+
+// console.log(isAdmin)
+
+// if (isAdmin) {
+//     alert("Sizi burada gormeyimize cox shadiq");
+// }else alert("Cox teessuf, Zehmet olmasa tezlikle abune olun")
+
+// let result = numOne + numTwo;
 
 // const name = "Trevor";
 // console.log(name.indexOf("r"));
