@@ -39,13 +39,37 @@ Məsələn, isLucky(234801);  // true qaytaracaq
  */
 
 
-function isLucky(number) {
-    number = String(number);
-    return (
-      +number[0] + +number[1] + +number[2] ===
-      +number[3] + +number[4] + +number[5]
-    );
+// function isLucky(number) {
+//     number = String(number);
+//     return (
+//       +number[0] + +number[1] + +number[2] ===
+//       +number[3] + +number[4] + +number[5]
+//     );
   
+// }
+
+// isLucky(234801);
+
+// 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+/**
+ * Funksiya parametr kimi bir neçə sözdən ibarət mətn qəbul edir. Funksiya geriyə eyni mətni qaytarmalıdır, lakin içindəki hər söz böyük hərflə başlamalıdır.
+Məsələn, capitalizeWords('Hello my name is Harry'); // 'Hello My Name Is Harry' qaytaracaq.
+ */
+
+function capitalizeWords(text) {
+    let textArray = text.split(' ');
+
+    text = '';
+    
+    for (let word of textArray) {
+        let firstLetter = word[0].toUpperCase();
+
+        text += firstLetter + word.slice(1) + " ";
+    }
+
+    return text
+
 }
 
-isLucky(234801);
+console.log(capitalizeWords("Hello my name is Harry"));// 'Hello My Name Is Harry
