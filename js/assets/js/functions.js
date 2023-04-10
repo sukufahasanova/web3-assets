@@ -1,12 +1,44 @@
-console.log('Halaleelelel')
-function powerOf(num, pow) {
-    return num ** pow
+// function dummy() {
+//   console.log("dummy");
+// }
+
+// const dummy = function () {
+//     console.log('dummy')
+// }
+
+
+
+const dummy = ()=>{
+    console.log("dummy")
 }
 
-let result = powerOf(2, 5); 
+dummy = 5;
 
-console.log(result);
-console.log(powerOf(2, 5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log('Halaleelelel')
+// function powerOf(num, pow) {
+//     return num ** pow
+// }
+
+// let result = powerOf(2, 5); 
+
+// console.log(result);
+// console.log(powerOf(2, 5));
 
 
 
