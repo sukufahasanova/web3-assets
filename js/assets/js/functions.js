@@ -1,3 +1,22 @@
+console.log('Halaleelelel')
+function powerOf(num, pow) {
+    return num ** pow
+}
+
+let result = powerOf(2, 5); 
+
+console.log(result);
+console.log(powerOf(2, 5));
+
+
+
+
+
+
+
+
+
+
 // function isletterOfFive(word) {
 //     if (typeof word === 'number') {
 //         console.log("zehmet olmasa setir tipi daxil edin");
