@@ -51,15 +51,79 @@ Rubl və dollarla hesab qəbul edən və bütün hesablardakı məbləğin cəmi
 Tutaq ki, müştərinin rubl hesabında 1200 rubl, dollar hesabında isə 20 dollar var. Bir dollar üçün məzənnə 75 rubl təşkil edir. Bu halda, funksiya belə mesaj göstərməlidir: Bütün depozitlər üzrə məbləğ: 2700 rubl.
  */
 
-function sumOfrubl(rubl, dollar) {
-    let dollarToRublConst = 75;
+// function sumOfrubl(rubl, dollar) {
+//     let dollarToRublConst = 75;
 
-    console.log(rubl + dollar * dollarToRublConst);
+//     console.log(rubl + dollar * dollarToRublConst);
+// }
+
+// sumOfrubl(1200,20);
+
+
+
+//****************************************** */
+
+/**
+ * Klaviaturadan 1-dən 99-da daxil olmaqla daxil edilmiş ədədi mətnlə ​​yazan funksiya tərtib edin.
+İstifadəçidən 1 ilə 99 arasında rəqəm daxil etməsini tələb edən və onu mətn şəklində konsola çıxaran numberToText funksiyası tərtib edin.
+
+Funksiya yaradın. Onda 1-dən 99-a qədər ədəd daxil edilməsini xahiş edin.
+ */
+
+function singleNumber(number) {
+  switch (number) {
+    case 1:
+      return "Bir";
+    case 2:
+      return "Iki";
+    case 3:
+      return "Uc";
+    case 4:
+      return "Dord";
+    case 5:
+      return "Bes";
+    case 6:
+      return "Alti";
+    case 7:
+      return "Yeddi";
+    case 8:
+      return "Sekkiz";
+    case 9:
+      return "Doqquz";
+  }
+}
+function pairNumber(number) {
+  switch (number) {
+    case 1:
+      return "On";
+    case 2:
+      return "Iyirmi";
+    case 3:
+      return "Otuz";
+    case 4:
+      return "Qirx";
+    case 5:
+      return "Elli";
+    case 6:
+      return "Altmish";
+    case 7:
+      return "Yetmis";
+    case 8:
+      return "Seksen";
+    case 9:
+      return "Doxsan";
+  }
 }
 
-sumOfrubl(1200,20);
+function numberToText() {
+  let num = prompt("Iki reqemli eded daxil et");
+  let first = +num[0];
+  let second = +num[1];
+  if (num.length > 1) {
+    console.log(`${pairNumber(first)} ${singleNumber(second)}  `);
+  } else {
+    console.log(`${singleNumber(+num)}`);
+  }
+}
 
-
-
-
-
+numberToText();
