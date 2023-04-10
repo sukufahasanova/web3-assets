@@ -33,14 +33,31 @@ Funksiyanı 3 müxtəlif ad üçün çağırın. */
 Üç ədədi parametr kimi qəbul edən funksiya yazın. Funksiya onlardan ən böyüyünü konsola çıxarmalıdır. */
 
 
-function maxNum(a,b,c) {
-    console.log(Math.max(a,b,c))
+// function maxNum(a,b,c) {
+//     console.log(Math.max(a,b,c))
+// }
+
+// maxNum(5, 8, 9);
+// maxNum(10, 8, 9);
+// maxNum(5, 20, 3);
+
+
+// ((((((((((((((((((((((((((((((((((((((()))))))))))))))))))))))))))))))))))))))
+
+/**
+ * Bütün hesabların cəmini rubl ilə mesaj çıxaran funksiya tərtib edin.
+Rubl və dollarla hesab qəbul edən və bütün hesablardakı məbləğin cəmin rublla göstərən funksiya yazın.
+
+Tutaq ki, müştərinin rubl hesabında 1200 rubl, dollar hesabında isə 20 dollar var. Bir dollar üçün məzənnə 75 rubl təşkil edir. Bu halda, funksiya belə mesaj göstərməlidir: Bütün depozitlər üzrə məbləğ: 2700 rubl.
+ */
+
+function sumOfrubl(rubl, dollar) {
+    let dollarToRublConst = 75;
+
+    console.log(rubl + dollar * dollarToRublConst);
 }
 
-maxNum(5, 8, 9);
-maxNum(10, 8, 9);
-maxNum(5, 20, 3);
-
+sumOfrubl(1200,20);
 
 
 
