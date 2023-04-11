@@ -149,140 +149,152 @@ Sualların hər birində istifadəçi “50/50” seçim etdikdə eyni pəncər�
 1-3 nöqtələrində  olan pəncərələrdən hər hansı birini bağlayan zaman, mesaj göstərilir: "3 sualdan X sualına düzgün cavab verdiniz və uduşunuz Y təşkil etdi", burada X birinci nöqtədə 0, ikincidə 1 və üçüncüdə 2 alacaq, bir də birinci bölmə üçün Y - 0, ikinci üçün 100 və üçüncü üçün isə 500 olacaqdır.
  */
 
-let bonus = 0;
-let next = false;
-let help = true;
-function questionAndCheckOne() {
-  let answer = prompt(
-    "Azerbaycanin Paytaxti haradir? A) Baki B) Lenkaran C) Sumqayit D)Ganja E) 50/50 komek"
-  );
-  if (answer === "A") {
-    bonus += 100;
-    next = confirm(
-      `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
-    );
-  } else if (answer === "E" && help) {
-    answer = prompt("Azerbaycanin Paytaxti haradir? A) Baki  D)Ganja ");
-    if (answer === "A") {
-      help = false;
-      bonus += 100;
-      next = confirm(
-        `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
-      );
-    } else {
-      alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
-    }
-  } else if (answer === "E" && !help) {
-    alert("Siz artiq yardimdan istifade emisiz");
-    questionAndCheckOne();
-  } else {
-    alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
-  }
-  return true;
-}
-function questionAndCheckTwo() {
-  let answer = prompt(
-    "Suyun Formulu hansidi? A) CO2 B) H2O C) NaCl D)CH3COOH E) 50/50 komek"
-  );
-  if (answer === "B") {
-    bonus += 100;
-    next = confirm(
-      `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
-    );
-  } else if (answer === "E" && help) {
-    answer = prompt(
-      "Suyun Formulu hansidi? A) CO2 B) H2O "
-    );
-    if (answer === "B") {
-      bonus += 100;
-      help = false;
-      next = confirm(
-        `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
-      );
-    } else {
-      alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
-    }
-  } else if (answer === "E" && !help) {
-    alert("Siz artiq yardimdan istifade emisiz");
-    questionAndCheckTwo();
-  } else {
-    alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
-  }
-  return true;
-}
-
-
-function questionAndCheckThree() {
-  let answer = prompt(
-    "BU Il KIMIN ILIDIR? A) HEYDER ALIYEV B) Conny DEPP C) Sumqayit D)BRUSE Uilles E) 50/50 komek"
-  );
-  if (answer === "A") {
-    bonus += 500;
-    alert(
-      `Oyun Bitdi Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil,`
-    );
-  } else if (answer === "E" && help) {
-    answer = prompt(
-      "BU Il KIMIN ILIDIR? A) HEYDER ALIYEV B) Conny DEPP"
-    );
-    if (answer === "A") {
-      bonus += 500;
-      help = false;
-      alert(
-        `Oyun bitdi Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil,`
-      );
-    } else {
-      alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
-    }
-  } else if (answer === "E" && !help) {
-    alert("Siz artiq yardimdan istifade etmisiz");
-    questionAndCheckThree();
-  } else {
-    alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
-  }
-  return true;
-}
-
-
-// function questionAndCheckThree() {
+// let bonus = 0;
+// let next = false;
+// let help = true;
+// function questionAndCheckOne() {
 //   let answer = prompt(
 //     "Azerbaycanin Paytaxti haradir? A) Baki B) Lenkaran C) Sumqayit D)Ganja E) 50/50 komek"
 //   );
 //   if (answer === "A") {
-//     bonus += 500;
-//     alert(
-//       `Oyunumuz bitdi! Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil edir `
+//     bonus += 100;
+//     next = confirm(
+//       `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
 //     );
 //   } else if (answer === "E" && help) {
 //     answer = prompt("Azerbaycanin Paytaxti haradir? A) Baki  D)Ganja ");
 //     if (answer === "A") {
-//       bonus += 500;
+//       help = false;
+//       bonus += 100;
+//       next = confirm(
+//         `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
+//       );
+//     } else {
+//       alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
+//     }
+//   } else if (answer === "E" && !help) {
+//     alert("Siz artiq yardimdan istifade emisiz");
+//     questionAndCheckOne();
+//   } else {
+//     alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
+//   }
+//   return true;
+// }
+// function questionAndCheckTwo() {
+//   let answer = prompt(
+//     "Suyun Formulu hansidi? A) CO2 B) H2O C) NaCl D)CH3COOH E) 50/50 komek"
+//   );
+//   if (answer === "B") {
+//     bonus += 100;
+//     next = confirm(
+//       `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
+//     );
+//   } else if (answer === "E" && help) {
+//     answer = prompt(
+//       "Suyun Formulu hansidi? A) CO2 B) H2O "
+//     );
+//     if (answer === "B") {
+//       bonus += 100;
 //       help = false;
 //       next = confirm(
 //         `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
 //       );
-//     } else if (answer === "E" && !help) {
-//       alert("Siz artiq yardimdan istifade emisiz");
-//       questionAndCheckThree();
 //     } else {
 //       alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
 //     }
+//   } else if (answer === "E" && !help) {
+//     alert("Siz artiq yardimdan istifade emisiz");
+//     questionAndCheckTwo();
 //   } else {
-//     alert(
-//       `Oyunumuz bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`
-//     );
+//     alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
 //   }
 //   return true;
 // }
 
-questionAndCheckOne();
 
-if (next) {
-  questionAndCheckTwo();
-}
-if (next) {
-  questionAndCheckThree();
-}
+// function questionAndCheckThree() {
+//   let answer = prompt(
+//     "BU Il KIMIN ILIDIR? A) HEYDER ALIYEV B) Conny DEPP C) Sumqayit D)BRUSE Uilles E) 50/50 komek"
+//   );
+//   if (answer === "A") {
+//     bonus += 500;
+//     alert(
+//       `Oyun Bitdi Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil,`
+//     );
+//   } else if (answer === "E" && help) {
+//     answer = prompt(
+//       "BU Il KIMIN ILIDIR? A) HEYDER ALIYEV B) Conny DEPP"
+//     );
+//     if (answer === "A") {
+//       bonus += 500;
+//       help = false;
+//       alert(
+//         `Oyun bitdi Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil,`
+//       );
+//     } else {
+//       alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
+//     }
+//   } else if (answer === "E" && !help) {
+//     alert("Siz artiq yardimdan istifade etmisiz");
+//     questionAndCheckThree();
+//   } else {
+//     alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
+//   }
+//   return true;
+// }
 
-console.log("next - ", next);
-console.log("bonus - ", bonus);
+
+// // function questionAndCheckThree() {
+// //   let answer = prompt(
+// //     "Azerbaycanin Paytaxti haradir? A) Baki B) Lenkaran C) Sumqayit D)Ganja E) 50/50 komek"
+// //   );
+// //   if (answer === "A") {
+// //     bonus += 500;
+// //     alert(
+// //       `Oyunumuz bitdi! Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil edir `
+// //     );
+// //   } else if (answer === "E" && help) {
+// //     answer = prompt("Azerbaycanin Paytaxti haradir? A) Baki  D)Ganja ");
+// //     if (answer === "A") {
+// //       bonus += 500;
+// //       help = false;
+// //       next = confirm(
+// //         `Tebrik edirik qazandiniz!Sizin udush mebleginiz ${bonus} manat teshkil, edir davam etmek ucun tesdiqle`
+// //       );
+// //     } else if (answer === "E" && !help) {
+// //       alert("Siz artiq yardimdan istifade emisiz");
+// //       questionAndCheckThree();
+// //     } else {
+// //       alert(`Oyun bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`);
+// //     }
+// //   } else {
+// //     alert(
+// //       `Oyunumuz bitdi! Meglub oldunuz! Sizin udush mebleginiz ${bonus} Azn`
+// //     );
+// //   }
+// //   return true;
+// // }
+
+// questionAndCheckOne();
+
+// if (next) {
+//   questionAndCheckTwo();
+// }
+// if (next) {
+//   questionAndCheckThree();
+// }
+
+// console.log("next - ", next);
+// console.log("bonus - ", bonus);
+
+
+/**
+ * Parametr kimi ədədi qəbul edən və onu dördüncü dərəcə qüvvətə yülsəldərək konsolda göstərən fourth() funksiyasını yazın.
+ */
+
+// function fourth (num) {
+//   console.log(num ** 4);
+// }
+// fourth(2)
+
+
