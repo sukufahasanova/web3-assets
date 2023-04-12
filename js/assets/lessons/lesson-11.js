@@ -16,7 +16,7 @@ Alınan dəyəri konsola çıxarın.
  * İstifadəçidən mətn daxil etməsini tələb edən və mətn elementlərini əks qaydada düzən proqram tərtib edin.
  */
 
-let num = "Ariel";
+let text = propmt("Adinizi daxil edin");
 
 for (let i = num.length - 1; i >= 0; i--){
     console.log(num[i])
