@@ -41,12 +41,12 @@ Konsola N dəfə «I know how to use cycles» mesajı çıxaran proqram yazın. 
  * Bütün ikirəqəmli tək ədədlərin cəmini konsola çıxaran proqram yazın.
  */
 
-let num = 11
-let sum =0
+let num = 11;
+let sum = 0;
 while (num < 100) {
     sum += num;
-    num += 2
+    num += 2;
     
 }
 
-console.log(sum)
+console.log(sum);
