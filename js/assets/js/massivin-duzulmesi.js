@@ -1,12 +1,36 @@
 
-const retro = ['music', 'cinema', 'theatre', 'Ballet'];
 
-const [aba, baba, caba, xaba] = retro;
+///  funksiyada rest operatoundan istifade ederek arqumentleri gondermek olar
 
-const [melody,film,...other] = retro
+// function letty(...args) {
+//     console.log(args)
+// }
 
-console.log(melody);
-console.log(other);
+// letty('fifon', 'lifon');
+
+
+
+// let massivOne = ["uno", "nese", "nes"];
+// // let massivCopyTwo = ["uno", "nese", "nes"];
+// let massivCopyThree = [...massivOne];
+
+// massivCopyThree.push('ding-dong');
+// console.log(massivOne)
+
+// console.log(massivOne === massivCopyThree);
+
+
+
+
+
+// const retro = ['music', 'cinema', 'theatre', 'Ballet'];
+
+// const [aba, baba, caba, xaba] = retro;
+
+// const [melody,film,...other] = retro
+
+// console.log(melody);
+// console.log(other);
 
 // console.log(aba);
 // console.log(baba);
