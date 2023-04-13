@@ -47,23 +47,38 @@ Eyni zamanda istifadəçi «Ləğv et» düyməsini klikləyərsə, proqram fəa
 
  */
 
-let queue = [];
-// let command;
-while (true) {
-  let command = prompt(
-    "Adiniz daxil edin: \n = isaresi daxil olarsa proqram dayanir novbe massivini ekrana cixarir/// \n boshluq olarsa proqram novbeden birincini silir ve proqram dayanir"
-  );
-  if (command === null) {
-    break;
-  } else if (command === "=") {
-    console.log(queue);
-    break;
-  } else if (command === "" || command === " ") {
-    console.log(queue.shift());
-    break;
-  } else {
-    queue.push(command);
-  }
+// let queue = [];
+// // let command;
+// while (true) {
+//   let command = prompt(
+//     "Adiniz daxil edin: \n = isaresi daxil olarsa proqram dayanir novbe massivini ekrana cixarir/// \n boshluq olarsa proqram novbeden birincini silir ve proqram dayanir"
+//   );
+//   if (command === null) {
+//     break;
+//   } else if (command === "=") {
+//     console.log(queue);
+//     break;
+//   } else if (command === "" || command === " ") {
+//     console.log(queue.shift());
+//     break;
+//   } else {
+//     queue.push(command);
+//   }
+// }
+
+// console.log(queue);
+
+
+/**
+ * 
+ * tam ededler sirasinin artan sirada duzen funksiya yazin
+ */
+
+let arrNum = [1, 4, 67, 43, 78, 9, 7, 2, 78, -3, 0, -11];
+
+function mySort(massive) {
+    return massive.sort((a, b) => a - b);
+
 }
 
-console.log(queue);
+console.log(mySort(arrNum));
