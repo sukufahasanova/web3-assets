@@ -32,17 +32,17 @@ Massiv verilib. "Episode 4: New Hope" kimi mesajları ardıcıl olaraq konsola �
  * 
  * İstifadəçidən beş ədəd elementi daxil etməyi tələb edən, onları massilə yazan və ən kiçik ədədi konsola çıxaran proqram yazın.
  */
-// let a = prompt("Vergulle ayrilan 5 eded daxil et").split(",");
-// while (a.length !== 5) {
-//   a = prompt("Vergulle ayrilan 5 eded daxil et").split(",");
-// }
+let a = prompt("Vergulle ayrilan 5 eded daxil et").split(",");
+while (a.length !== 5) {
+  a = prompt("Vergulle ayrilan 5 eded daxil et").split(",");
+}
 
-// let min = +a[0];
+let min = +a[0];
 
-// for (let i = 1; i < a.length; i++) {
-//   if (+a[i] < min) {
-//     min = +a[i];
-//   }
-// }
+for (let i = 1; i < a.length; i++) {
+  if (+a[i] < min) {
+    min = +a[i];
+  }
+}
 
-// console.log(min);
+console.log(min);
