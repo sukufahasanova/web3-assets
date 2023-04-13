@@ -26,3 +26,44 @@
 // }
 
 // console.log(developers);
+
+/**
+ * 
+ * 
+İstifadəçidən növbəni yeniləmək üçün məlumat tələb edin.
+
+
+Əgər istifadəçi yeni müştərinin ad və soyadını daxil edibsə, proqram müştərini növbənin sonuna əlavə edir.
+
+İstifadəçi boş bir dəyər daxil edərsə, proqram növbədə birincinin adını və soyadını göstərir və onu növbədən çıxarır.
+
+
+İstifadəçi «=» işarəsini daxil edərsə, proqram dayanır və növbə massivini konsola çıxarır.
+
+
+Sintaktik səhvlərin varlığını və proqramın düzgünlüyünü yoxlayın.
+
+Eyni zamanda istifadəçi «Ləğv et» düyməsini klikləyərsə, proqram fəaliyyətini dayandırır.
+
+ */
+
+let queue = [];
+// let command;
+while (true) {
+  let command = prompt(
+    "Adiniz daxil edin: \n = isaresi daxil olarsa proqram dayanir novbe massivini ekrana cixarir/// \n boshluq olarsa proqram novbeden birincini silir ve proqram dayanir"
+  );
+  if (command === null) {
+    break;
+  } else if (command === "=") {
+    console.log(queue);
+    break;
+  } else if (command === "" || command === " ") {
+    console.log(queue.shift());
+    break;
+  } else {
+    queue.push(command);
+  }
+}
+
+console.log(queue);
